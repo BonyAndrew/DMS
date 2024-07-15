@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORDERS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Customers View</h1>
+            <!-- <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div> -->
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Customer Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Email<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Telephone <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Entreprise <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                    
+                    <!-- <tr>
+                        <td> 1 </td>
+                        <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Warren  King</td>
+                        <td> Warren@gmail.com</td>
+                        <td> 653231964</td>
+                        <td> <strong> Gripsu </strong></td>
+                       
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="images/Jeet Saru.png" alt=""> Boni Andrew </td>
+                        <td> Boni@gmail.com</td>
+                        <td> 695231864</td>
+                        <td> <strong> Bling </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="images/Sonal Gharti.jpg" alt=""> Kakus Bio </td>
+                        <td> Kakus@gmail.com</td>
+                        <td> 654251964</td>
+                        <td> <strong> Dripper </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Alcime GC </td>
+                        <td> Alcime@gmail.com</td>
+                        <td> 680231964</td>
+                        <td> <strong> Fouine </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
+                        <td> sarita@gmail.com</td>
+                        <td> 655231960</td>
+                        <td> <strong> No Enterprise </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Super Alex</td>
+                        <td> Alex@gmail.com</td>
+                        <td> 657234064</td>
+                        <td> <strong> Pressing </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Eri Small </td>
+                        <td> Eri@gmail.com</td>
+                        <td> 656282864</td>
+                        <td> <strong> Design </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> King Ghost</td>
+                        <td> Ghost@gmail.com</td>
+                        <td> 657834964</td>
+                        <td> <strong> Dreans </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GiC </td>
+                        <td> Alson@gmail.com</td>
+                        <td> 650201964</td>
+                        <td> <strong> No Enterprise </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Bridon Brad </td>
+                        <td> Brad@gmail.com</td>
+                        <td> 658285794</td>
+                        <td> <strong> Grek </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Presnel Gims </td>
+                        <td> Presnel@gmail.com</td>
+                        <td> 698991964</td>
+                        <td> <strong> Gripsu </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Peps OGE </td>
+                        <td> Pepse@gmail.com</td>
+                        <td> 656601964</td>
+                        <td> <strong> No Enterprise </strong></td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Gunners GC </td>
+                        <td> Gunners@gmail.com</td>
+                        <td> 650211765</td>
+                        <td> <strong> Arsenal </strong></td>
+                        
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

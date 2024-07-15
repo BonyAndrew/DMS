@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORDERS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Deliverer View</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Deliverer Name <span class="icon-arrow">&UpArrow;</span></th>
+                       
+                        <th> Email<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Telephone <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Vehicule <span class="icon-arrow">&UpArrow;</span></th>
+                       
+                        <th> Immatriculation <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- <tr>
+                        <td> 1 </td>
+                        <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Grim Joe</td>
+                        <td> grim@gmail.com</td>
+                        <td> 655251964</td>
+                        <td> Cargo bike</td>
+                        <td>CMR:xol124</td>                     
+                       
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="images/Jeet Saru.png" alt=""> Dimitri </td>
+                        <td> Dimitri@gmail.com</td>
+                        <td> 690131860</td>
+                        <td> Truck</td>
+                        <td>CMR:xvw27</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="images/Sonal Gharti.jpg" alt=""> Nyamsi </td>
+                        <td> Nyamsi@gmail.com</td>
+                        <td> 651291066</td>
+                        <td> Van</td>
+                        <td>CMR:xbb24</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="images/Alson GC.jpg" alt="">Arno </td>
+                        <td> Arno@gmail.com</td>
+                        <td> 620601164</td>
+                        <td> Classic Vehicle</td>
+                        <td>CMR:vlit20</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Tchana </td>
+                        <td> Tchana@gmail.com</td>
+                        <td> 685272060</td>
+                        <td> Van</td>
+                        <td>CMR:Xml11</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Claude</td>
+                        <td> Claude@gmail.com</td>
+                        <td> 661254064</td>
+                        <td> Cargo bike</td>
+                        <td>CMR:pit4</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> Parker </td>
+                        <td> Parker@gmail.com</td>
+                        <td> 678106662</td>
+                        <td> Van</td>
+                        <td>CMR:xol124</td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> Brice</td>
+                        <td> Brice@gmail.com</td>
+                        <td> 656844264</td>
+                        <td> Cargo bike</td>
+                        <td>CMR:xol7yeM</td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Billy </td>
+                        <td> Billy@gmail.com</td>
+                        <td> 651241964</td>
+                        <td> Cargo bike</td>
+                        <td>CMR:xol123</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Brighton </td>
+                        <td> Brighton@gmail.com</td>
+                        <td> 658285794</td>
+                        <td> Cargo bike</td>
+                        <td>CMR:brl78p</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Master </td>
+                        <td> Master@gmail.com</td>
+                        <td> 678911460</td>
+                        <td> Cargo bike</td>
+                        <td>CMR:wlto41</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Benson </td>
+                        <td> Benson@gmail.com</td>
+                        <td> 657681964</td>
+                        <td> Classic Vehicle</td>
+                        <td>DL:Mol124</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Grieve </td>
+                        <td> Grieve@gmail.com</td>
+                        <td> 650211765</td>
+                        <td> Cargo bike</td>
+                        <td>DL:lom4</td>
+                        
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
